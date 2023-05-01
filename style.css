@@ -1,0 +1,17 @@
+.navs:visited {
+  background-color: lavenderblush;
+}
+.navs:hover {
+  background-color: lavenderblush;
+}
+.navs:active {
+  background-color: lavenderblush;
+}
+/* pet block */
+.pink-border:hover {
+  border: 3px outset red;
+}
+.pet-name {
+  text-decoration: none;
+  text-shadow: 5px 5px 12px red;
+}

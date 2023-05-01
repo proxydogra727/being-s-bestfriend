@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- ********************heading *************************-->
+    <div class="container-fluid">
+      <div class="row">
+        <div
+          class="col bg-danger text-center text-white h1 animate__animated animate__pulse"
+          style="height: 60px;"
+        >
+          Being's Bestfriend
+        </div>
+      </div>
+    </div>
+    <!-- **********************heading ends********************** -->
+
+    <!--************************** nav bar*********************** -->
+    <nav
+      class="navbar navbar-expand-sm bg-white text-dark border border-danger border-top-0"
+    >
+      <div
+        class="container-fluid justify-content-between justify-content-around"
+      >
+        <!-- logo -->
+        <div class="col-sm-3">
+          <a class="navbar-brand" href="#">
+            <img src="image/logo.png" style="height: 80px;" />
+            PET SHOP
+          </a>
+        </div>
+        <!-- nav-links -->
+        <div class="col-sm-6">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link text-danger navs" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger navs" href="aboutus.html">
+                  About Us</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-danger navs"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                >
+                  Pets
+                </a>
+                <ul class="dropdown-menu bg-danger">
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Dog</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Cat</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Bird</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Rabbit</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Hamster</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#"
+                      >Tortoise and Turtle</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item text-white" href="#">Fish</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger navs" href="#">Health Care</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger navs" href="#">Clothes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-danger navs" href="#">Toys</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ***********navbar ends****************** -->
+
+    <!--*************************** carsouel *******************-->
+    <div class="container-fluid mt-5">
+      <!-- Carousel -->
+      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="0"
+            class="active"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#demo"
+            data-bs-slide-to="3"
+          ></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="image/carousel1.jpg"
+              class="d-block"
+              style="width: 100%; height: 500px;"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="image/carousel2.jpg"
+              class="d-block"
+              style="width: 100%; height: 500px;"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="image/carousel3.jpg"
+              class="d-block"
+              style="width: 100%; height: 500px;"
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="image/carousel4.jpg"
+              class="d-block"
+              style="width: 100%; height: 500px;"
+            />
+          </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#demo"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </div>
+    <!-- *********************carsouel ends*************************** -->
+
+    <!-- *************************quote************************** -->
+    <div class="text-one container text-center ">
+      <div class="col mx-5 my-5">
+        Pets benefit people’s well-being in many ways, from joy to unconditional
+        love. When animals and people live together in caring relationships,
+        that can lead to stronger emotional, social, and physical well-being,
+        research reveals.
+      </div>
+    </div>
+
+    <!-- ********************heading******************* -->
+    <div class="h1 container text-center text-danger">
+      <div class="col my-5 mt-5">
+          CHOOSE YOUR BESTFRIEND
+          <hr class="text-danger">
+      </div>
+    </div>
+    <!-- ********************pets block******************** -->
+    <div class="container-fluid">
+      <div class="row justify-content-sm-around">
+        <div class=" card-one col-sm-3 p-3 text-center">
+          <a href="dog.html" class="pet-name text-danger">
+            <img
+              src="image/dog.jpg"
+              height="150px"
+              width="100%"
+              class="pink-border"
+            />
+            <h3>Dogs</h3>
+          </a>
+        </div>
+        <div class="col-sm-3 p-3 text-center card-two">
+          <a href="#" class="pet-name text-danger">
+            <img
+              src="image/cat.jpg"
+              height="150px"
+              width="100%"
+              class="pink-border"
+            />
+            <h3>Cats</h3>
+          </a>
+        </div>
+        <div class="col-sm-3 p-3 text-center card-three">
+          <a href="#" class="pet-name text-danger">
+            <img
+              src="image/bird.jpg"
+              height="150px"
+              width="100%"
+              class="pink-border"
+            />
+            <h3>Birds</h3>
+          </a>
+        </div>
+        <div class="col-sm-3 p-3 text-center card-four">
+          <a href="#" class="pet-name text-danger">
+            <img
+              src="image/rabbit.jfif"
+              height="150px"
+              width="100%"
+              class="pink-border"
+            />
+            <h3>Rabbit</h3>
+          </a>
+        </div>
+        <div class="col-sm-3 p-3 text-center card-five">
+          <a href="#" class="pet-name text-danger">
+            <img
+              src="image/hamster.jpg"
+              height="150px"
+              width="100%"
+              class="pink-border"
+            />
+            <h3>Hamster</h3>
+          </a>
+        </div>
+        <div class="col-sm-3 p-3 text-center card-six">
+          <a href="#" class="pet-name text-danger">
+            <img
+              src="image/tor.jfif"
+              height="150px"
+              width="100%"
+              class="pink-border"
+            />
+            <h3>Tortoise and Turtle</h3>
+          </a>
+        </div>
+        <div class="col-sm-3 p-3 text-center card-seven">
+          <a href="#" class="pet-name text-danger">
+            <img
+              src="image/fish.webp"
+              height="150px"
+              width="100%"
+              class="pink-border"
+            />
+            <h3>Fish</h3>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- ************************pets block end**************** -->
+
+
+    <!-- **************************brands*********************** -->
+    <div class="h1 container text-center text-danger" style="margin-top: 100px;">
+      <div class="col my-5 mt-5">
+          OUR COLLAB
+          <hr class="text-danger">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-2 text-center">
+          <img src="image/brand 1.webp" height="100px" width="80%">
+        </div>
+        <div class="col-sm-2 text-center">
+          <img src="image/brand 2.webp" height="100px" width="80%">
+        </div>
+        <div class="col-sm-2 text-center">
+          <img src="image/brand 3.webp" height="100px" width="80%">
+        </div>
+        <div class="col-sm-2 text-center">
+          <img src="image/brand 4.webp" height="100px" width="80%">
+        </div>
+        <div class="col-sm-2 text-center">
+          <img src="image/brand 5.webp" height="100px" width="80%">
+        </div>
+        <div class="col-sm-2 text-center">
+          <img src="image/brand 6.webp" height="100px" width="80%">
+        </div>
+      </div>
+    </div>
+    <!-- **************************brands ends*********************** -->
+
+<!-- **************************pet food*********************** -->
+    <div class="h1 container text-center text-danger" style="margin-top: 100px;">
+      <div class="col my-5 mt-5">
+           FOOD FOR YOUR BESTFRIEND
+          <hr class="text-danger">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 text-center">
+          <img class="pink-border" src="image/food 1.webp" height="300px" width="80%">
+        </div>
+        <div class="col-sm-3 text-center">
+          <img class="pink-border" src="image/food 2.webp" height="300px" width="80%">
+        </div>
+        <div class="col-sm-3 text-center">
+          <img class="pink-border" src="image/food 3.webp" height="300px" width="80%">
+        </div>
+        <div class="col-sm-3 text-center">
+          <img class="pink-border" src="image/food 4.webp" height="300px" width="80%">
+        </div>
+      </div>
+    </div>
+    <!-- **************************pet food*********************** -->
+
+
+    <!-- **********************footer***************** -->
+    <div class="container-fluid border bg-danger p-5 mt-5">
+      <div class="row">
+        <div class="col-4 footerr">
+          <h4 class="text-white">we are on social</h4>
+          <a href="#" style="text-decoration: none;">
+            <img src="image/fb.png" height="20px" width="20px" />
+            <img src="image/insta.png" height="20px" width="20px" />
+            <img src="image/tweet.png" height="20px" width="20px" />
+          </a>
+        </div>
+        <div class="col-4 h5 footerr ">
+          <ul class="text-white">
+            <li>
+              <a href="#" class="text-white" style="text-decoration: none;"
+                >About us
+              </a>
+            </li>
+            <li>
+              <a href="#" class="text-white" style="text-decoration: none;">
+                Legal Notice</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-white" style="text-decoration: none;">
+                Privacy policy</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-white" style="text-decoration: none;">
+                Secure Payment</a
+              >
+            </li>
+            <li>
+              <a href="#" class="text-white" style="text-decoration: none;">
+                Return Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-4 footerr" class="text-white">
+          <pre class="text-white h6">
+      More information
+      Telephone: 136 186
+      
+      National Relay Service: 133 677
+      www.relayservice.gov.au
+      
+      VicEmergency Hotline: 1800 226 226
+            </pre
+          >
+        </div>
+      </div>
+    </div>
+    <script>
+      $(document).ready(function()
+        {
+             $(window).scroll(function(){
+                  var positiontop=$(document).scrollTop();
+                  console.log(positiontop);
+
+                  if((positiontop>230) &&(positiontop<900)){
+                    $(".text-one").addClass('animate__animated animate__bounce');
+                  }
+      
+                  if(positiontop>400){
+                       $('.card-one').addClass(' animate__animated animate__backInLeft animate__slow');
+                       $('.card-two').addClass('animate__animated animate__backInLeft animate__slow');
+                       $('.card-three').addClass('animate__animated animate__backInRight animate__slow');
+                       $('.card-four').addClass('animate__animated animate__backInRight animate__slow');
+                       $('.card-five').addClass('animate__animated animate__backInLeft animate__slow');
+                       $('.card-six').addClass('animate__animated animate__backInUp animate__slow');
+                       $('.card-seven').addClass('animate__animated animate__backInRight animate__slow');
+                  }
+                  if(positiontop>700){
+                       $('.footerr').addClass('animate__animated animate__fadeInDown');
+                  }
+             })
+        })
+    </script>
+
+  </body>
+</html>
